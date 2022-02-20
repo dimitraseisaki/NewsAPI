@@ -12,17 +12,17 @@ import model.thenewsdb.Location;
 import model.thenewsdb.LocationResult;
 import services.LocationAPIService;
 import services.NewsAPIService;
-//σε αυτή την κλάση μπορούμε να εκτελέσουμε test τον μεθόδων που δημιουργήσαμε στη κλάση NewsAPIService
+//οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ test οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½ NewsAPIService
 public class NewsAPITest {
 
 	@Before
 	public void setUp() throws Exception {
 	}
 	
-	//δημιουργούμε TEST όπου καλούμε τις μεθόδους από το ΝewsAPIService μια προς μια 
+	//οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ TEST οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½ewsAPIService οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ 
 	
 	@Test
-	//τεστ για τα νέα της χώρας την οποία επιλέγει ο χρήστης
+	//οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½
 	public void testSearchAPI1() throws NewsAPIException {
 		final NewsAPIService newsSearchService=NewsAPI.getNewsAPIService();
 		final List<newsinfo> results = newsSearchService.getPopularNewsForCountry("gr");
@@ -30,7 +30,7 @@ public class NewsAPITest {
 		results.forEach(System.out::println);	}
 	
 	@Test
-	//τεστ ανάλογα με την χώρα και την κατηγορία που επιλέγει ο χρήστης
+	//οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½
 	public void testSearchAPI2() throws NewsAPIException {
 		final NewsAPIService newsSearchService=NewsAPI.getNewsAPIService();
 		final List<newsinfo> results = newsSearchService.getPopularNewsForCategory("gr","business");
@@ -39,7 +39,7 @@ public class NewsAPITest {
 	}
 	
 	@Test
-	//τεστ ανάλογα το query που επιλέγει ο χρήστης
+	//οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ query οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½
 	public void testSearchAPI3() throws NewsAPIException {
 		final NewsAPIService newsSearchService=NewsAPI.getNewsAPIService();
 		final List<newsinfo> results = newsSearchService.searchQueryForNews("Apple");
@@ -48,7 +48,7 @@ public class NewsAPITest {
 	}
 	
 	@Test
-	//τεστ ανάλογα με τo query την γλώσσα και την πηγή των νέων
+	//οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½o query οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½
 	public void testSearchAPI4() throws NewsAPIException {
 		final NewsAPIService newsSearchService=NewsAPI.getNewsAPIService();
 		final List<newsinfo> results = newsSearchService.searchEverythingForSource("Apple","en","bbc-news");
@@ -57,7 +57,7 @@ public class NewsAPITest {
 	}
 	
 	@Test
-	//τεστ ανάλογα με τo query την γλώσσα
+	//οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½o query οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½
 	public void testSearchAPI5() throws NewsAPIException {
 		final NewsAPIService newsSearchService=NewsAPI.getNewsAPIService();
 		final List<newsinfo> results = newsSearchService.getsearchNewsForLanguage("Apple","en");
@@ -67,7 +67,7 @@ public class NewsAPITest {
 	}
 	
 	@Test
-	//τεστ ανάλογα με τo query την γλώσσα και την πηγή των νέων και την ημερομηνία δημοσίευση 
+	//οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½o query οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ 
 	public void testSearchAPI6() throws NewsAPIException {
 		final NewsAPIService newsSearchService=NewsAPI.getNewsAPIService();
 		final List<newsinfo> results = newsSearchService.getsearchQueryForDateofPublication("Apple","en","bbc-news","2022-01-25","2022-01-31");
@@ -77,11 +77,11 @@ public class NewsAPITest {
 	}
 
 		 @Test
-		//βρίσκει αυτόμαρα top-headlines news από την περιοχή του χρήστη ανάλογα με το  IP address που έχει
+		//οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ top-headlines news οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ οΏ½οΏ½  IP address οΏ½οΏ½οΏ½ οΏ½οΏ½οΏ½οΏ½
 	public void testSearchAPI() throws NewsAPIException {
 		 final LocationAPIService newsSearchService1= LocationAPI.getLocationAPIService();
-		 //βαζεις το api_key
-		 final LocationResult results2 = newsSearchService1.searchUserLocation("at_8aqFoTPTYnhz1lPOI5yfygioNPURy");
+		 //οΏ½οΏ½οΏ½οΏ½οΏ½οΏ½ οΏ½οΏ½ api_key
+		 final LocationResult results2 = newsSearchService1.searchUserLocation("API_KEY");
 		 String country = Location.getCountry();
 		 System.out.println("Your country is: " + country);
 	     final NewsAPIService newsSearchService= NewsAPI.getNewsAPIService();
